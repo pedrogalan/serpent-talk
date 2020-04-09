@@ -3,3 +3,6 @@
 
 (defn serpent-talk [string]
   (str "Serpent! You said: " (csk/->snake_case string)))
+
+(defn -main [& args]
+  (println (serpent-talk (first args))))
